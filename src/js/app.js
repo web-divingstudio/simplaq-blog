@@ -104,6 +104,7 @@ const letsModal = document.querySelector('.lets-modal');
 const bodyItem = document.querySelector('body');
 const btnClose = document.querySelectorAll('.btn-close');
 const sendModal = document.querySelector('.send-modal');
+const btnReload = document.querySelector('.send-modal .send-modal__body .done-btn');
 function closeMenu() {
   burgerBtn.classList.remove("active");
   navMenu.classList.remove("active");
@@ -151,7 +152,6 @@ btnClose.forEach(function (btnCloseFun) {
     sendModal.classList.remove("active");
   }
 });
-
-// $('.send-modal .send-modal__body .done-btn').on('click', function () {
-//   location.reload()
-// });
+btnReload.addEventListener('click', function () {
+  location.reload()
+});
