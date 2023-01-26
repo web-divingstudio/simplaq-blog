@@ -1,0 +1,15 @@
+.blog__articles {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 rem(-28);
+
+  @include media(1280) {
+    margin: 0 rem(-15);
+
+  }
+
+  @include media(767) {
+    margin: 0;
+
+  }
+}

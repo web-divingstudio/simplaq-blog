@@ -1,1 +1,16 @@
 // Заголовки, общие БЄМ блоки и проче...
+
+.btn-gradient {
+  background: $gradient;
+  /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+  ;
+  border-radius: 20px;
+
+  &:hover {
+    background: radial-gradient(85.25% 187.84% at 92% -10.71%, #F18C53 0%, #E83A64 100%)
+      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+    ;
+    text-decoration: none !important;
+  }
+
+}

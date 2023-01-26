@@ -1,5 +1,156 @@
+<div class="lets-modal">
+  <div class="lets__container">
+    <div class="modal-header">
+      <div class="btn-close"><span></span><span></span></div>
+    </div>
+  </div>
+  <div class="contacts">
+    <div class="lets__container">
+      <div class="contacts__block">
+        <div class="contacts__form">
+          <h2 class="modal-title">Let’s Talk</h2>
+          <div class="contacts__link">
+            <div class="contacts__box">
+              <img src="@img/modal/mail.svg" alt="">
+              <div class="text">
+                <h3 class="title">Email</h3>
+                <a href="mailto:hello@simplaq.com">hello@simplaq.com</a>
+              </div>
+            </div>
+            <div class="contacts__box">
+              <img src="@img/modal/phone.svg" alt="">
+              <div class="text">
+                <h3 class="title">Phone number</h3>
+                <a href="tel:+17606604704">Call the shop</a>
+              </div>
+            </div>
+          </div>
+          <form enctype="multipart/form-data" method="post" id="form" onsubmit="send(event, 'send-lets.php')">
+            <div class="input__block">
+              <label for="your-name">
+                <img src="@img/form/user.svg" alt="">
+                <input type="text" name="your-name" id="modal-your-name" placeholder="Full name">
+              </label>
+              <label for="email">
+                <img src="@img/form/email.svg" alt="">
+                <input type="email" name="email" id="modal-email" placeholder="Email" required>
+              </label>
+              <label for="company">
+                <img src="@img/form/company.svg" alt="">
+                <input type="text" name="company" id="modal-company" placeholder="Company name">
+              </label>
+              <label for="modal-phone">
+                <img src="@img/form/phone.svg" alt="">
+                <input type="text" name="phone" id="modal-phone" placeholder="Phone number" required>
+              </label>
+
+              <label for="modal-message" class="message">
+                <img src="@img/form/message.svg" alt="">
+                <textarea name="modal-message" id="modal-message" placeholder="Message"></textarea>
+              </label>
+            </div>
+            <div class="checkout__block">
+              <label for="modal-policy">
+                <input type="checkbox" name="policy" id="modal-policy" required>
+                <span>I accept</span> <a href="#">Privacy policy</a>
+              </label>
+              <label for="modal-terms">
+                <input type="checkbox" name="terms" id="modal-terms" required>
+                <span>I accept</span> <a href="#">Terms & Conditions</a>
+              </label>
+              <label for="modal-offers">
+                <input type="checkbox" name="offers" id="modal-offers">
+                <span>I want to receive commercial offers from mall & stores</span>
+              </label>
+            </div>
+            <button type="submit" class="btn btn-submit btn-gradient">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="send-modal">
+  <div class="send__container">
+    <div class="modal-header">
+      <div class="btn-close"><span></span><span></span></div>
+    </div>
+    <div class="send-modal__body">
+      <div class="box">
+        <img src="@img/modal/send.svg" alt="">
+        <h3 class="title">Message Sent</h3>
+        <p>Thank you for your message. We will contact you as soon as possible.</p>
+        <a href="#" class="btn-gradient done-btn">Done</a>
+      </div>
+    </div>
+  </div>
+</div>
 <footer class="footer">
   <div class="footer__container">
-    
+    <div class="footer__header">
+      <div class="brand">
+        <a href="#">
+          <img src="@img/footer/logo.svg" alt="">
+        </a>
+      </div>
+      <div class="btn-block">
+        <a href="https://simplaq.com/#contacts" class="btn btn-demo">Get a demo</a>
+        <a href="#" class="btn btn-gradient lets">Let’s Talk</a>
+      </div>
+    </div>
+    <div class="footer__body">
+      <div class="footer__nav">
+        <div class="nav-box">
+          <a href="#overview" class="nav-link">Overview</a>
+          <a href="#solutions" class="nav-link">Features</a>
+          <a href="#benefits" class="nav-link">Benefits</a>
+        </div>
+        <div class="nav-box">
+          <a href="#opportunities" class="nav-link">Insights</a>
+          <a href="#contacts" class="nav-link">Contact</a>
+
+        </div>
+
+        <div class="nav-box">
+          <a href="#" class="support">
+            <img src="@img/footer/Messages.svg" alt="">
+            <p>Customer <span>support</span> and help 24 / 7</p>
+          </a>
+        </div>
+      </div>
+      <div class="subscribe">
+        <div class="subscribe__block">
+          <h3 class="subscribe__title">Get exclusive offers and weekly updates</h3>
+          <form enctype="multipart/form-data" method="post" id="form" onsubmit="send(event, 'send-subscribe.php')">
+            <label for="email-subscribe">
+              <img src="@img/footer/email.svg" alt="">
+              <input type="email" name="email-subscribe" id="email-subscribe" placeholder="Email" autocomplete="off"
+                required>
+            </label>
+            <button type="submit" class="subscribe-btn">Subscribe</button>
+          </form>
+        </div>
+        <div class="follow__block">
+          <h3 class="subscribe__title">Follow US</h3>
+          <div class="social__block">
+            <a href="https://www.facebook.com/simplaq"><img src="@img/footer/facebook.svg" alt=""></a>
+            <a href="https://www.youtube.com/channel/UCJxzIbwd_vfoPi4NIP9OBVA"><img src="@img/footer/youtube.svg"
+                alt=""></a>
+            <a href="https://www.instagram.com/simplaq/"><img src="@img/footer/instagram.svg" alt=""></a>
+            <a href="https://www.linkedin.com/company/simplaq/"><img src="@img/footer/twitter.svg" alt=""></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__block">
+      <div class="copy">
+        Simplaq | <span>All rights reserved. © 2022</span>
+      </div>
+      <div class="link">
+        <a href="#">Privacy & terms</a>
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
   </div>
+
 </footer>

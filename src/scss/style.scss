@@ -32,4 +32,10 @@
 
 // Подключение стилей отдельных блоков и секций =======================================================================================================================
 @import 'layout/header';
+@import 'layout/modal';
 @import 'layout/footer';
+@import 'layout/head';
+@import 'layout/article__post';
+@import 'layout/blog';
+@import 'layout/single';
+@import 'layout/contacts';
