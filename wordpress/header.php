@@ -12,11 +12,7 @@
     <header class="header">
   <div class="header__container">
     <div class="navbar">
-      <div class="brand">
-        <a href="https://simplaq.com/">
-          <img src="<?php echo get_template_directory_uri()?>/images/header/logo.svg" alt="">
-        </a>
-      </div>
+      <?php echo get_template_part( 'template-parts/content', 'brand'); ?>
       <div class="navmenu">
         <div class="burger-btn">
           <span></span>
@@ -38,10 +34,7 @@
         </nav>
 
       </div>
-      <div class="btn-block">
-        <a href="https://simplaq.com/#contacts" class="btn btn-demo">Get a demo</a>
-        <a href="#" class="btn btn-gradient lets">Let’s Talk</a>
-      </div>
+      <?php echo get_template_part( 'template-parts/content', 'btn-block'); ?>
     </div>
   </div>
 </header>

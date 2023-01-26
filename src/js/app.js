@@ -94,6 +94,7 @@ function send(event, php) {
   req.onerror = function () { alert("Request sending error"); };
   req.send(new FormData(event.target));
 }
+
 const burgerBtn = document.querySelector('.burger-btn');
 const navMenu = document.querySelector('.navmenu .navigation');
 const navLinks = document.querySelectorAll('.nav-link');

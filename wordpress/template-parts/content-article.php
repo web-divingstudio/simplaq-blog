@@ -16,8 +16,8 @@
       <div class="article__header">
         <span class="article__category">
           <?php 
-          $category = get_the_category($post->ID);
-          echo $category->term_id;?>
+          $categories = get_the_category(); 
+          if( $categories[0] ) { echo $categories[0]->name; } ?>
         </span>
         <span class="article__date"><?php the_date('F d, Y')?></span>
       </div>

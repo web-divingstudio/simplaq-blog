@@ -21,7 +21,7 @@
               </div>
             </div>
           </div>
-          <form enctype="multipart/form-data" method="post" id="form" onsubmit="send(event, 'send-lets.php')">
+          <form enctype="multipart/form-data" method="post" id="form" onsubmit="send(event, '<?php echo get_template_directory_uri()?>/send-lets.php')">
             <div class="input__block"><label for="your-name"><img
                   src="<?php echo get_template_directory_uri()?>/images/form/user.svg" alt=""> <input type="text"
                   name="your-name" id="modal-your-name" placeholder="Full name"></label> <label for="email"><img
