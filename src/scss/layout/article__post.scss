@@ -106,11 +106,10 @@
     margin-top: 0;
     font-family: Poppins, sans-serif;
     font-weight: 500;
-    color: $contentTitle;
-
-    &:hover {
-      color: #ee7101;
-    }
+    background: $gradient;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #e83a64;
 
     @include media(490) {
       font-size: rem(16);
@@ -118,13 +117,15 @@
   }
 
   &__excerpt {
-    font-size: rem(18);
-    line-height: 2;
-    color: #726e98;
-    margin-bottom: rem(20);
+    p {
+      font-size: rem(18);
+      line-height: 2;
+      color: #646572;
+      margin-bottom: rem(20);
 
-    @include media(490) {
-      font-size: rem(14);
+      @include media(490) {
+        font-size: rem(14);
+      }
     }
   }
 

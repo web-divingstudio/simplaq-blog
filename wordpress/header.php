@@ -10,31 +10,39 @@
 <body>
   <div class="wrapper">
     <header class="header">
-  <div class="header__container">
-    <div class="navbar">
-      <?php echo get_template_part( 'template-parts/content', 'brand'); ?>
-      <div class="navmenu">
-        <div class="burger-btn">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <nav class="navigation">
-          <ul class="nav-list">
-            <li class="nav-item"><a href="#overview" class="nav-link">Overview</a></li>
-            <li class="nav-item"><a href="#solutions" class="nav-link">Solutions</a></li>
-            <li class="nav-item"><a href="#opportunities" class="nav-link">Opportunities</a></li>
-            <li class="nav-item"><a href="#benefits" class="nav-link">Benefits</a></li>
-            <li class="nav-item"><a href="#contacts" class="nav-link">Contact</a></li>
-          </ul>
-          <div class="socials__header">
-              <?php echo get_template_part( 'template-parts/content', 'social-block', ['position'=>'header']); ?>
-            <a href="https://simplaq.com/#contacts" class="btn btn-demo">Get a demo</a>
-          </div>
-        </nav>
+      <div class="header__container">
+        <div class="navbar">
+          <?php echo get_template_part( 'template-parts/content', 'brand'); ?>
+          <div class="navmenu">
+            <div class="burger-btn">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <nav class="navigation">
+              <ul class="nav-list">
+                <li class="nav-item"><a href="https://simplaq.com/#overview" class="nav-link">Overview</a></li>
+                <li class="nav-item"><a href="https://simplaq.com/#solutions" class="nav-link">Solutions</a></li>
+                <li class="nav-item"><a href="https://simplaq.com/#opportunities" class="nav-link">Opportunities</a></li>
+                <li class="nav-item"><a href="https://simplaq.com/#benefits" class="nav-link">Benefits</a></li>
+                <li class="nav-item"><a href="<?php echo home_url(); ?>" class="nav-link">Blog</a></li>
+                <li class="nav-item"><a href="https://simplaq.com/#contacts" class="nav-link">Contact</a></li>
+              </ul>
+              <div class="socials__header">
+                  <?php echo get_template_part( 'template-parts/content', 'social-block', ['position'=>'header']); ?>
+                <a href="https://simplaq.com/#contacts" class="btn btn-demo">Get a demo</a>
+              </div>
+            </nav>
 
+          </div>
+          <?php echo get_template_part( 'template-parts/content', 'btn-block'); ?>
+        </div>
       </div>
-      <?php echo get_template_part( 'template-parts/content', 'btn-block'); ?>
-    </div>
-  </div>
-</header>
+      <?php
+      if(is_single()){
+        ?>
+        <div class="progress-bar"></div>
+        <?php
+      }
+      ?>
+    </header>

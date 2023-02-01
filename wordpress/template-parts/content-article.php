@@ -19,7 +19,7 @@
           $categories = get_the_category(); 
           if( $categories[0] ) { echo $categories[0]->name; } ?>
         </span>
-        <span class="article__date"><?php the_date('F d, Y')?></span>
+        <span class="article__date"><?php the_time('F d, Y')?></span>
       </div>
       <div class="article__body">
         <span class="article__title"><?php the_title()?></span>

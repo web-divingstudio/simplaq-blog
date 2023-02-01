@@ -9,10 +9,11 @@
         </div>
         <div class="footer__body">
           <div class="footer__nav">
-            <div class="nav-box"><a href="#overview" class="nav-link">Overview</a> <a href="#solutions"
-                class="nav-link">Features</a> <a href="#benefits" class="nav-link">Benefits</a></div>
-            <div class="nav-box"><a href="#opportunities" class="nav-link">Insights</a> <a href="#contacts"
-                class="nav-link">Contact</a></div>
+            <div class="nav-box"><a href="https://simplaq.com/#overview" class="nav-link">Overview</a> <a href="https://simplaq.com/#solutions"
+                class="nav-link">Features</a> <a href="https://simplaq.com/#benefits" class="nav-link">Benefits</a></div>
+            <div class="nav-box"><a href="https://simplaq.com/#opportunities" class="nav-link">Insights</a> 
+            <a href="<?php echo home_url(); ?>" class="nav-link">Blog</a>
+            <a href="https://simplaq.com/#contacts" class="nav-link">Contact</a></div>
             <div class="nav-box">
               <a href="#" class="support"><img src="<?php echo get_template_directory_uri()?>/images/footer/Messages.svg" alt="">
                 <p>Customer <span>support</span> and help 24 / 7</p>
@@ -28,6 +29,7 @@
                 </label>
                 <button type="submit" class="subscribe-btn">Subscribe</button>
               </form>
+              <!--  echo do_shortcode('[contact-form-7 id="32" title="subscribe"]');?> -->
             </div>
             <div class="follow__block">
               <h3 class="subscribe__title">Follow US</h3>

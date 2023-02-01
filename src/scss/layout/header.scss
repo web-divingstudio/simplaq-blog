@@ -82,6 +82,15 @@ header.header {
       }
     }
   }
+
+  .progress-bar {
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    height: 4px; // Высота линии, можно менять/подбирать
+    width: 0%;
+    background: $gradient; // Цвет линии, можете заменить на HEX.
+  }
 }
 
 @media (max-width:1279px) {

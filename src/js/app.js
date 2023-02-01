@@ -18,7 +18,7 @@ import {
 // import { MousePRLX } from './libs/parallaxMouse'
 
 /* Раскомментировать для использования */
-// import AOS from 'aos'
+import AOS from 'aos'
 
 /* Раскомментировать для использования */
 // import Swiper, { Navigation, Pagination } from 'swiper'
@@ -43,7 +43,7 @@ isWebp()
 /* Библиотека для анимаций ===============================================================================
  *  документация: https://michalsnik.github.io/aos
  */
-// AOS.init();
+AOS.init();
 // =======================================================================================================
 
 // Паралакс мышей ========================================================================================
@@ -106,6 +106,7 @@ const bodyItem = document.querySelector('body');
 const btnClose = document.querySelectorAll('.btn-close');
 const sendModal = document.querySelector('.send-modal');
 const btnReload = document.querySelector('.send-modal .send-modal__body .done-btn');
+const progressBarItem = document.querySelector('.progress-bar');
 function closeMenu() {
   burgerBtn.classList.remove("active");
   navMenu.classList.remove("active");
@@ -156,3 +157,13 @@ btnClose.forEach(function (btnCloseFun) {
 btnReload.addEventListener('click', function () {
   location.reload()
 });
+
+function progressBar() {
+  let scroll = document.body.scrollTop || document.documentElement.scrollTop;
+  let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  let scrolled = scroll / height * 100;
+  progressBarItem.style.width = scrolled + '%';
+}
+if (progressBarItem) {
+  window.addEventListener('scroll', progressBar);
+}
