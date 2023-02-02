@@ -5,6 +5,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <?php wp_head();?>
+  <script charset=“utf-8” type=“text/javascript” src=“//js-eu1.hsforms.net/forms/embed/v2.js”></script>
+  <script>
+  hbspt.forms.create({
+  region: “eu1",
+  portalId: “26899523”,
+  formId: “4bc4f47b-56ea-4314-926f-c9b913a1b4f3"
+  });
+  </script>
+  
 </head>
 
 <body>
